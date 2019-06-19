@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="A3Portal Application Test Automation Test Suite" duration-ms="25094" started-at="2019-06-19T07:38:46Z" finished-at="2019-06-19T07:39:11Z">
+    <groups>
+    </groups>
+    <test name="A3Portal Application Test Automation  Test Cases" duration-ms="25094" started-at="2019-06-19T07:38:46Z" finished-at="2019-06-19T07:39:11Z">
+      <class name="com.A3Portal.Testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.A3Portal.Testcases.LoginPageTest@7cd62f43]" name="setUp" is-config="true" duration-ms="22159" started-at="2019-06-19T07:38:46Z" finished-at="2019-06-19T07:39:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.A3Portal.Testcases.LoginPageTest@7cd62f43]" name="loginTest" duration-ms="2174" started-at="2019-06-19T07:39:08Z" finished-at="2019-06-19T07:39:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.A3Portal.Testcases.LoginPageTest@7cd62f43]" name="tearDown" is-config="true" duration-ms="726" started-at="2019-06-19T07:39:10Z" finished-at="2019-06-19T07:39:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.A3Portal.Testcases.LoginPageTest -->
+    </test> <!-- A3Portal Application Test Automation  Test Cases -->
+  </suite> <!-- A3Portal Application Test Automation Test Suite -->
+</testng-results>

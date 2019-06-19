@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="A3Portal Application Test Automation Test Suite">
+
+    <listeners>
+		<listener class-name="com.A3Portal.ExtentReportListeners.ExtentReporterNG" />
+	</listeners>
+
+	<test name="A3Portal Application Test Automation  Test Cases" >
+		<classes>
+			<class name="com.A3Portal.Testcases.LoginPageTest">
+			
+			</class>
+			 
+		<!--	<class name="com.A3portal.testcases.HomePageTest"></class>
+			<class name="com.A3portal.ContactsPageTest"></class>
+ -->
+		</classes>
+	</test>
+</suite>
