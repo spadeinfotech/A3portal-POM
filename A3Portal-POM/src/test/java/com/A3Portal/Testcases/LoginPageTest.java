@@ -47,6 +47,7 @@ public class LoginPageTest extends TestBase{
 	@AfterMethod
 	public void tearDown() throws InterruptedException{
 		closeDriver();
+		System.out.println("browser closed");
 		
 	}
 	

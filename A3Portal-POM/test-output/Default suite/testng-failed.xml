@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.A3Poarta.Testcases.LoginPageTest">
+      <class name="com.A3Portal.Testcases.LoginPageTest">
         <methods>
           <include name="tearDown"/>
           <include name="loginTest"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.A3Poarta.Testcases.LoginPageTest -->
+      </class> <!-- com.A3Portal.Testcases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

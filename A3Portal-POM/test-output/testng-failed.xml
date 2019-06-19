@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [A3Portal Application Test Automation Test Suite]">
-  <listeners>
-    <listener class-name="com.A3Portal.ExtentReportListeners.ExtentReporterNG"/>
-  </listeners>
-  <test thread-count="5" name="A3Portal Application Test Automation  Test Cases(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.A3Portal.Testcases.LoginPageTest">
         <methods>
@@ -14,5 +11,5 @@
         </methods>
       </class> <!-- com.A3Portal.Testcases.LoginPageTest -->
     </classes>
-  </test> <!-- A3Portal Application Test Automation  Test Cases(failed) -->
-</suite> <!-- Failed suite [A3Portal Application Test Automation Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

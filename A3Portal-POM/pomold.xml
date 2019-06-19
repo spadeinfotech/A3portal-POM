@@ -11,18 +11,56 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
- <maven.compiler.source>1.6</maven.compiler.source>
-    <maven.compiler.target>1.6</maven.compiler.target>
+     <jre.level>1.8.0_211</jre.level>
+		<jdk.level>1.8</jdk.level>
+ <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
-  
-  <dependencies>
-   <dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>6.11</version>
-    <scope>compile</scope>
-</dependency>
+  <build>
+		<plugins>
+			<!-- Compiler plug-in -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${jdk.level}</source>
+					<target>${jdk.level}</target>
+				</configuration>
+				 <version>3.1</version>
+			</plugin>
+			
+		<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>2.12.2</version>
+</plugin>
+			
+			<!--  
+			<plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.6.1</version>
+            <configuration>
+                <executable>C:\Program Files\Java\jdk1.8.0_162\bin\javac.exe</executable>
+                <compilerVersion>1.8</compilerVersion>
+            </configuration>
+        </plugin>
+        -->
+			<!-- Below plug-in is used to execute tests -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.12.4</version>
+				<configuration>
+					<suiteXmlFiles>
+						<!-- TestNG suite XML files -->
+						<suiteXmlFile>testNG.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
+  <dependencies>
     <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
@@ -66,20 +104,13 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+
+ <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.11</version>
+    <scope>compile</scope>
+</dependency>
    </dependencies>
-   <build>
-   <plugins>
-<plugin>
-		<groupId>org.apache.maven.plugins</groupId>
-		<artifactId>maven-surefire-plugin</artifactId>
-		<version>2.19.1</version>
-			<configuration>
-				<suiteXmlFiles>
-				<!-- TestNG suite XML files -->
-					<suiteXmlFile>testNG.xml</suiteXmlFile>
-				</suiteXmlFiles>
-			</configuration>
-	</plugin>
-</plugins>
-</build>
+
 </project>
