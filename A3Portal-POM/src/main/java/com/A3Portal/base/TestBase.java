@@ -35,11 +35,11 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "C:\\Ankit-WorkArea\\SeleniumWorkSpace\\A3Portal-POM\\chromedriver.exe");	
+			System.setProperty("webdriver.chrome.driver", ".\\chromedriver.exe");	
 			driver = new ChromeDriver(); 
 		}
 		else if(browserName.equals("FF")){
-			System.setProperty("webdriver.gecko.driver", "C:\\Ankit-WorkArea\\SeleniumWorkSpace\\A3Portal-POM\\geckodriver.exe");	
+			System.setProperty("webdriver.gecko.driver", ".\\geckodriver.exe");	
 			driver = new FirefoxDriver(); 
 		}
 		
@@ -58,7 +58,11 @@ public class TestBase {
 		driver.get(prop.getProperty("url"));
 		
 	}
+	public static void closeDriver() throws InterruptedException{
+		Thread.sleep(2000);
+		driver.close();
 	
+	}
 	
 	
 	

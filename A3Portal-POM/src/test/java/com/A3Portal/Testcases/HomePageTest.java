@@ -1,5 +1,8 @@
 package com.A3Portal.Testcases;
 
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.A3Portal.TestPages.ContactPage;
@@ -7,10 +10,6 @@ import com.A3Portal.TestPages.HomePage;
 import com.A3Portal.TestPages.LoginPage;
 import com.A3Portal.Testutil.Testutil;
 import com.A3Portal.base.TestBase;
-
-import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 
 
 public class HomePageTest extends TestBase {
@@ -59,8 +58,9 @@ public class HomePageTest extends TestBase {
 	
 	
 	@AfterMethod
-	public void tearDown(){
-		driver.quit();
+	public void tearDown() throws InterruptedException{
+		
+		closeDriver();
 	}
 	
 	
