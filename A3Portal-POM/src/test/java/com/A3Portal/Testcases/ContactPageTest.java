@@ -30,7 +30,7 @@ public class ContactPageTest extends TestBase{
 	
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
-		
+
 		initialization();
 		testUtil = new Testutil();
 		contactsPage = new ContactPage();
