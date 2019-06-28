@@ -19,27 +19,31 @@ public class LoginPageTest extends TestBase{
 	@BeforeMethod
 	public void setUp(){
 		initialization();
-		loginPage = new LoginPage();	
+		loginPage = new LoginPage();
+		System.out.println("opening browser");
 	}
 	
-	@Test(priority=1,enabled=false)
+	@Test(enabled=true)
 	public void loginPageTitleTest(){
 		String title = loginPage.validateLoginPageTitle();
-		Assert.assertEquals(title, "Free CRM software for any Business");
+		Assert.assertEquals(title, "Core Compete");
+		System.out.println("running test1");
+	}
+
+	
+	@Test(enabled=true)
+	public void loginTest(){
+		//loginPage.clickOnlogin();
+		System.out.println("running test2");
+		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+	
 	}
 	
-	@Test(priority=2, enabled=false)
+	
+	@Test( enabled=false)
 	public void crmLogoImageTest(){
 		boolean flag = loginPage.validateCCImage();
 		Assert.assertTrue(flag);
-	}
-	
-	
-	
-	@Test(priority=3, enabled=true)
-	public void loginTest(){
-		//loginPage.clickOnlogin();
-		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
 	

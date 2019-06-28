@@ -1,21 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="3" total="6" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="A3Portal Application Test Automation Test Suite" duration-ms="22862" started-at="2019-06-19T17:33:02Z" finished-at="2019-06-19T17:33:25Z">
+  <suite name="A3Portal Application Test Automation Test Suite" duration-ms="51780" started-at="2019-06-28T07:04:20Z" finished-at="2019-06-28T07:05:12Z">
     <groups>
     </groups>
-    <test name="A3Portal Application Test Automation  Test Cases" duration-ms="22862" started-at="2019-06-19T17:33:02Z" finished-at="2019-06-19T17:33:25Z">
-      <class name="com.A3Portal.Testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.A3Portal.Testcases.LoginPageTest@754ba872]" name="setUp" is-config="true" duration-ms="16068" started-at="2019-06-19T17:33:03Z" finished-at="2019-06-19T17:33:19Z">
+    <test name="A3Portal Application Test Automation  Test Cases" duration-ms="51780" started-at="2019-06-28T07:04:20Z" finished-at="2019-06-28T07:05:12Z">
+      <class name="com.A3Portal.Testcases.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.A3Portal.Testcases.HomePageTest@e25b2fe]" name="setUp" is-config="true" duration-ms="10403" started-at="2019-06-28T07:04:59Z" finished-at="2019-06-28T07:05:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.A3Portal.Testcases.LoginPageTest@754ba872]" name="loginTest" duration-ms="2661" started-at="2019-06-19T17:33:19Z" finished-at="2019-06-19T17:33:21Z">
+        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:com.A3Portal.Testcases.HomePageTest@e25b2fe]" name="verifyHomePageTitleTest" duration-ms="16" started-at="2019-06-28T07:05:10Z" finished-at="2019-06-28T07:05:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.A3Portal.Testcases.HomePageTest@e25b2fe]" name="tearDown" is-config="true" duration-ms="2114" started-at="2019-06-28T07:05:10Z" finished-at="2019-06-28T07:05:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.A3Portal.Testcases.HomePageTest -->
+      <class name="com.A3Portal.Testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.A3Portal.Testcases.LoginPageTest@204f30ec]" name="setUp" is-config="true" duration-ms="22309" started-at="2019-06-28T07:04:20Z" finished-at="2019-06-28T07:04:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:0, instance:com.A3Portal.Testcases.LoginPageTest@204f30ec]" name="loginPageTitleTest" duration-ms="24" started-at="2019-06-28T07:04:43Z" finished-at="2019-06-28T07:04:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.A3Portal.Testcases.LoginPageTest@204f30ec]" name="tearDown" is-config="true" duration-ms="4360" started-at="2019-06-28T07:04:43Z" finished-at="2019-06-28T07:04:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.A3Portal.Testcases.LoginPageTest@204f30ec]" name="setUp" is-config="true" duration-ms="9778" started-at="2019-06-28T07:04:47Z" finished-at="2019-06-28T07:04:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.A3Portal.Testcases.LoginPageTest@204f30ec]" name="loginTest" duration-ms="622" started-at="2019-06-28T07:04:57Z" finished-at="2019-06-28T07:04:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.A3Portal.Testcases.LoginPageTest@754ba872]" name="tearDown" is-config="true" duration-ms="4102" started-at="2019-06-19T17:33:21Z" finished-at="2019-06-19T17:33:25Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.A3Portal.Testcases.LoginPageTest@204f30ec]" name="tearDown" is-config="true" duration-ms="2116" started-at="2019-06-28T07:04:57Z" finished-at="2019-06-28T07:04:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

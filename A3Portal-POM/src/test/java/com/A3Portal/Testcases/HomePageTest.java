@@ -22,11 +22,8 @@ public class HomePageTest extends TestBase {
 		super();
 	}
 
-	//test cases should be separated -- independent with each other
-	//before each test case -- launch the browser and login
-	//@test -- execute test case
-	//after each test case -- close the browser
-	
+
+
 	@BeforeMethod
 	public void setUp() {
 		initialization();
@@ -37,19 +34,21 @@ public class HomePageTest extends TestBase {
 	}
 	
 	
-	@Test(priority=1)
+	@Test(priority=1, enabled=true)
 	public void verifyHomePageTitleTest(){
 		String homePageTitle = homePage.verifyHomePageTitle();
-		Assert.assertEquals(homePageTitle, "CRMPRO","Home page title not matched");
+		Assert.assertEquals(homePageTitle, "Core Compete","Home page title not matched");
+		System.out.println("running test1");
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2, enabled=false)
 	public void verifyUserNameTest(){
 		testUtil.switchToFrame();
 		Assert.assertTrue(homePage.verifyCorrectUserName());
+		System.out.println("running test2");
 	}
 	
-	@Test(priority=3)
+	@Test(priority=3, enabled=false)
 	public void verifyContactsLinkTest(){
 		testUtil.switchToFrame();
 		contactsPage = homePage.clickOnContactsLink();
@@ -61,6 +60,7 @@ public class HomePageTest extends TestBase {
 	public void tearDown() throws InterruptedException{
 		
 		closeDriver();
+		System.out.println("browser closed");
 	}
 	
 	

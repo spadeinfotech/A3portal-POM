@@ -6,7 +6,7 @@
       <class name="com.A3Portal.Testcases.LoginPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="loginTest"/>
+          <include name="crmLogoImageTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.A3Portal.Testcases.LoginPageTest -->
